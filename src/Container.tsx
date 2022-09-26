@@ -9,6 +9,7 @@ container.wrapChild = false;
 interface ContainerProps extends ContainerOptions {
 	render?: (rootRef: React.RefObject<any>) => React.ReactElement;
 	style?: CSSProperties;
+  children?: React.ReactNode;
 }
 
 class Container extends Component<ContainerProps> {
