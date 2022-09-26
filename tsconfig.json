@@ -17,7 +17,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"target": "es5",
-		"noImplicitAny": true,
+		"noImplicitAny": false,
 		"noImplicitReturns": true,
 		"strictFunctionTypes": true,
 		"declaration": true,
