@@ -1,3 +1,18 @@
+# 0.11.3 - 09-25-2022
+
+updates for typescript
+
+## Added
+  - N/A
+
+## Changed
+  - typing for never to not throw an error
+
+## Fixes
+  - N/A
+
+---
+
 # 0.11.2 - 09-25-2022
 
 updates for React > 18
