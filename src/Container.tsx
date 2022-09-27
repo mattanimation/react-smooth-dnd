@@ -125,13 +125,13 @@ class Container extends Component<ContainerProps> {
     return Object.keys(this.props).reduce((result: ContainerOptions, key: string) => {
       const optionName = key as keyof ContainerOptions;
       const prop = this.props[optionName];
-
+      let res: any = result[optionName] as any;
       if (typeof prop === 'function') {
-        result[optionName] = (...params: any[]) => {
+        res = (...params: any[]) => {
           return (this.props[optionName] as Function)(...params);
         }
       } else {
-        result[optionName] = prop;
+        res = prop;
       }
 
       return result;
